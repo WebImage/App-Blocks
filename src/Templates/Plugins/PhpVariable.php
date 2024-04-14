@@ -1,11 +1,11 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Plugins;
+namespace WebImage\BlockManager\Templates\Plugins;
 
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspileException;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerState;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\TemplateParser;
+use WebImage\BlockManager\Templates\Transpilers\TranspileException;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
 
 class PhpVariable extends Variable
 {

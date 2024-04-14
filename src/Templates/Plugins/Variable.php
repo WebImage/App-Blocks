@@ -1,14 +1,14 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Plugins;
+namespace WebImage\BlockManager\Templates\Plugins;
 
-use WebImage\BlockManager\src\Templates\IndentHelper;
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\src\Templates\Transpilers\Plugins\AbstractTranspilerPlugin;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspileException;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerState;
-use WebImage\BlockManager\src\Templates\Transpilers\VariableInterface;
+use WebImage\BlockManager\Templates\IndentHelper;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\TemplateParser;
+use WebImage\BlockManager\Templates\Transpilers\Plugins\AbstractTranspilerPlugin;
+use WebImage\BlockManager\Templates\Transpilers\TranspileException;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
+use WebImage\BlockManager\Templates\Transpilers\VariableInterface;
 
 class Variable extends AbstractTranspilerPlugin implements VariableInterface
 {

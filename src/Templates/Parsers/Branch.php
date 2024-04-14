@@ -1,8 +1,8 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Parsers;
+namespace WebImage\BlockManager\Templates\Parsers;
 
-use WebImage\BlockManager\src\Templates\ImmutableMeta;
+use WebImage\BlockManager\Templates\ImmutableMeta;
 
 final class Branch
 {

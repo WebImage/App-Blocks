@@ -1,16 +1,16 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Plugins;
+namespace WebImage\BlockManager\Templates\Plugins;
 
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\src\Templates\Parsers\ParserException;
-use WebImage\BlockManager\src\Templates\Parsers\ParserState;
-use WebImage\BlockManager\src\Templates\Parsers\Plugins\AbstractMacroParser;
-use WebImage\BlockManager\src\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\src\Templates\Transpilers\Plugins\TranspilerPluginTrait;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerPluginInterface;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerState;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\BlockManager\Templates\Parsers\ParserException;
+use WebImage\BlockManager\Templates\Parsers\ParserState;
+use WebImage\BlockManager\Templates\Parsers\Plugins\AbstractMacroParser;
+use WebImage\BlockManager\Templates\Parsers\TemplateParser;
+use WebImage\BlockManager\Templates\Transpilers\Plugins\TranspilerPluginTrait;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerPluginInterface;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
 
 class AuthorMacro extends AbstractMacroParser implements TranspilerPluginInterface
 {

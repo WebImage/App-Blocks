@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Plugins;
+namespace WebImage\BlockManager\Templates\Plugins;
 
-use WebImage\BlockManager\src\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\src\Templates\Parsers\ParserState;
-use WebImage\BlockManager\src\Templates\Parsers\Plugins\AbstractMacroParser;
+use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\BlockManager\Templates\Parsers\ParserState;
+use WebImage\BlockManager\Templates\Parsers\Plugins\AbstractMacroParser;
 
 class ControlDefinitionMacro extends AbstractMacroParser
 {
@@ -38,7 +38,7 @@ class ControlDefinitionMacro extends AbstractMacroParser
         }
     }
 
-    public static function getArgumentDefinitions(string $macroName): array
+	public static function getArgumentDefinitions(string $macroName): array
     {
         if ($macroName == self::MACRO_CONTROL_DEFINITION) {
             return [

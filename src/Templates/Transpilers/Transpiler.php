@@ -1,14 +1,14 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Transpilers;
+namespace WebImage\BlockManager\Templates\Transpilers;
 
-use WebImage\BlockManager\src\Templates\Context;
-use WebImage\BlockManager\src\Templates\IndentHelper;
-use WebImage\BlockManager\src\Templates\Lexers\TemplateLexer;
-use WebImage\BlockManager\src\Templates\Meta;
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\ParseResult;
-use WebImage\BlockManager\src\Templates\Parsers\TemplateParser;
+use WebImage\BlockManager\Templates\Context;
+use WebImage\BlockManager\Templates\IndentHelper;
+use WebImage\BlockManager\Templates\Lexers\TemplateLexer;
+use WebImage\BlockManager\Templates\Meta;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\ParseResult;
+use WebImage\BlockManager\Templates\Parsers\TemplateParser;
 
 class Transpiler implements TranspilerInterface
 {

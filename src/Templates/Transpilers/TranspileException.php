@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Transpilers;
+namespace WebImage\BlockManager\Templates\Transpilers;
 
 class TranspileException extends \Exception
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Transpilers;
+namespace WebImage\BlockManager\Templates\Transpilers;
 
-use WebImage\BlockManager\src\Templates\Context;
-use WebImage\BlockManager\src\Templates\Meta;
+use WebImage\BlockManager\Templates\Context;
+use WebImage\BlockManager\Templates\Meta;
 
 class TranspilerState
 {
@@ -24,7 +24,7 @@ class TranspilerState
     }
 
     /**
-     * @return \WebImage\BlockManager\src\Templates\Transpilers\TranspilerInterface
+     * @return \WebImage\BlockManager\Templates\Transpilers\TranspilerInterface
      */
     public function getTranspiler(): TranspilerInterface
     {

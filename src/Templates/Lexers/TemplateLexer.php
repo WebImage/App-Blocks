@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Lexers;
+namespace WebImage\BlockManager\Templates\Lexers;
 
 //use Doctrine\Common\Lexer\AbstractLexer;
 

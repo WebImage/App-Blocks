@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Parsers\Plugins;
+namespace WebImage\BlockManager\Templates\Parsers\Plugins;
 
-use WebImage\BlockManager\src\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\src\Templates\Parsers\ParserException;
-use WebImage\BlockManager\src\Templates\Parsers\ParserState;
+use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\BlockManager\Templates\Parsers\ParserException;
+use WebImage\BlockManager\Templates\Parsers\ParserState;
 
 class EachMacroParser extends AbstractMacroParser /* implements TranspilerPluginInterface */
 {

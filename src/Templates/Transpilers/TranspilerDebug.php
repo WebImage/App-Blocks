@@ -1,8 +1,8 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Transpilers;
+namespace WebImage\BlockManager\Templates\Transpilers;
 
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\Branch;
 
 class TranspilerDebug
 {

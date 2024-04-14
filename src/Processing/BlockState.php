@@ -2,8 +2,6 @@
 
 namespace WebImage\BlockManager\Processing;
 
-use WebImage\Core\ArrayHelper;
-
 class BlockState {
 	/** @var BlockFile[] */
 	private array $results;
@@ -54,9 +52,10 @@ class BlockState {
 //		call_user_func($callable, $this->results);
 //		return $this;
 //	}
-	public function destination(DestinationProcessorInterface $destination): void
+	public function process(ProcessorInterface $destination): BlockState
 	{
-		$destination->output($this->results);
+		$destination->process($this->results);
+		return $this;
 	}
 
 	/**

@@ -1,11 +1,11 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Parsers;
+namespace WebImage\BlockManager\Templates\Parsers;
 
-use WebImage\BlockManager\src\Templates\Context;
-use WebImage\BlockManager\src\Templates\Lexers\TemplateLexer;
-use WebImage\BlockManager\src\Templates\Lexers\TemplateLexerDebugger;
-use WebImage\BlockManager\src\Templates\Meta;
+use WebImage\BlockManager\Templates\Context;
+use WebImage\BlockManager\Templates\Lexers\TemplateLexer;
+use WebImage\BlockManager\Templates\Lexers\TemplateLexerDebugger;
+use WebImage\BlockManager\Templates\Meta;
 use WebImage\BlockManager\Templates\Parsers\ParseException;
 
 class TemplateParser
@@ -66,7 +66,7 @@ class TemplateParser
     }
 
     /**
-     * @return \WebImage\BlockManager\src\Templates\Parsers\ParserPluginInterface[]
+     * @return \WebImage\BlockManager\Templates\Parsers\ParserPluginInterface[]
      */
     public function plugins(): array
     {

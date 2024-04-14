@@ -1,17 +1,17 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Parsers\Plugins;
+namespace WebImage\BlockManager\Templates\Parsers\Plugins;
 
-use WebImage\BlockManager\src\Templates\Context;
-use WebImage\BlockManager\src\Templates\Lexers\Token;
-use WebImage\BlockManager\src\Templates\Meta;
-use WebImage\BlockManager\src\Templates\Parsers\AbstractParserPlugin;
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\src\Templates\Parsers\ParserDebugger;
-use WebImage\BlockManager\src\Templates\Parsers\ParserException;
-use WebImage\BlockManager\src\Templates\Parsers\ParserState;
-use WebImage\BlockManager\src\Templates\Parsers\TemplateParser;
+use WebImage\BlockManager\Templates\Context;
+use WebImage\BlockManager\Templates\Lexers\Token;
+use WebImage\BlockManager\Templates\Meta;
+use WebImage\BlockManager\Templates\Parsers\AbstractParserPlugin;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\BlockManager\Templates\Parsers\ParserDebugger;
+use WebImage\BlockManager\Templates\Parsers\ParserException;
+use WebImage\BlockManager\Templates\Parsers\ParserState;
+use WebImage\BlockManager\Templates\Parsers\TemplateParser;
 
 abstract class AbstractMacroParser extends AbstractParserPlugin
 {
@@ -222,8 +222,8 @@ abstract class AbstractMacroParser extends AbstractParserPlugin
     }
 
     /**
-     * Allows inheritting class to do something with the passed arguments
-     * @param array|null $args
+     * Allows inheriting class to do something with the passed arguments
+     * @param Branch[]|null $args
      * @return void
      */
     protected function processArguments(ParserState $state, array $args)

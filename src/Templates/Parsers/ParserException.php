@@ -1,5 +1,5 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Parsers;
+namespace WebImage\BlockManager\Templates\Parsers;
 
 class ParserException extends \RuntimeException {}

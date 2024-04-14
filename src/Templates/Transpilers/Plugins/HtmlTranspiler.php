@@ -1,11 +1,11 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Transpilers\Plugins;
+namespace WebImage\BlockManager\Templates\Transpilers\Plugins;
 
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\Plugins\HtmlParser;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspileException;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerState;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\Plugins\HtmlParser;
+use WebImage\BlockManager\Templates\Transpilers\TranspileException;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
 
 class HtmlTranspiler extends AbstractTranspilerPlugin
 {

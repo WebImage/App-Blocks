@@ -1,3 +1,54 @@
+# Build System
+
+**/block-packages** - Contains the block packages that are available to the block manager service.  Each package is a directory that contains a package.json file and a blocks directory.  The blocks directory contains the block templates that are available to the block manager service.
+
+**/components/blocks** - Building blocks for the block manager service.  This directory contains the block manager service, block manager, and block editor components.
+
+**/components/blocks/config-panels** - Configuration panels for the block manager service.
+
+**/components/css** - Contains the css for the block manager service.
+
+**/services/blocks/type-service.ts** - register(BlockTypeDefinition)
+
+**/types/block-types** - The block type definitions that will define the properties that a block has.
+
+## Build Process
+- Need
+  - Builder / designer control
+  - List of CSS controls, e.g. all, box {all,margin,padding,border}, font (family, size, unit) (could be builder controls)
+  - List of Config Panels, including global or custom panels, e.g. general, advanced
+- Typical .block files renders:
+  - Block template [x] PHP [x] React
+  - Config Panel? probably not since this can be generated based on block config
+  - BlockTypeDefinition:
+    ```mermaid
+    classDiagram
+      class BlockTypeDefinition~BlockType~ {
+        string type
+        BlockConfig~BlockType~ defaultConfig
+        T defaultData
+        FunctionComponent~BlockProps~BlockType~~ configPanel
+        FunctionComponent~BlockProps~BlockType~~ designer
+        string[] requiredParentTypes
+        string[] supportedChildrenTypes 
+      }
+      class BlockConfig {
+        CSSProperties css
+      }
+      class Block~BlockType~ {
+        string type
+        BlockConfig config
+        T data
+        Array~Block~BlockType~~ children
+      }
+      
+      class CSSProperties {
+      }
+      BlockConfig "1" --> "n" CSSProperties
+      BlockTypeDefinition ..> BlockConfig
+```
+How to manage conditional blocks?  Can probably be configurable based on structure / tree properties and value tree.
+
 # Templates
 Blocks are a template language that allows the template to be transpiled into multiple formats.  The current focus is on PHP and React components.
 

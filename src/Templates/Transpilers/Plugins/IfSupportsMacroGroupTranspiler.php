@@ -1,12 +1,12 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Transpilers\Plugins;
+namespace WebImage\BlockManager\Templates\Transpilers\Plugins;
 
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\Plugins\IfSupportsMacroParser;
-use WebImage\BlockManager\src\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerInterface;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerState;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\Plugins\IfSupportsMacroParser;
+use WebImage\BlockManager\Templates\Parsers\TemplateParser;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerInterface;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
 
 class IfSupportsMacroGroupTranspiler extends AbstractTranspilerPlugin
 {

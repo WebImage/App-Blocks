@@ -2,6 +2,8 @@
 
 namespace WebImage\BlockManager\Processing;
 
+use WebImage\BlockManager\Templates\Parsers\ParseResult;
+
 class BlockFile {
 	private string $originalFile;
 	private string $file;
@@ -28,7 +30,7 @@ class BlockFile {
 		return $this->file;
 	}
 
-	public function getResult()
+	public function getResult(): ParseResult
 	{
 		return $this->result;
 	}

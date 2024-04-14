@@ -1,13 +1,14 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Transpilers\Plugins;
+namespace WebImage\BlockManager\Templates\Transpilers\Plugins;
 
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\Plugins\WrapMacroParser;
-use WebImage\BlockManager\src\Templates\Plugins\DraggableMacro;
-use WebImage\BlockManager\src\Templates\Plugins\PropertyMacro;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspileException;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerState;
+use WebImage\BlockManager\Processing\ReactVariableTypes;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\Plugins\WrapMacroParser;
+use WebImage\BlockManager\Templates\Plugins\DraggableMacro;
+use WebImage\BlockManager\Templates\Plugins\PropertyMacro;
+use WebImage\BlockManager\Templates\Transpilers\TranspileException;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
 
 class ReactBlockMacroTranspiler extends BlockMacroTranspiler
 {
@@ -64,11 +65,11 @@ EOT;
         $output = '';
         $meta = $state->getMeta();
 
-        if (isset($meta[PropertyMacro::META_BLOCK_PROPERTIES])) {
+        if (isset($meta[PropertyMacro::META_PROPERTIES])) {
             $typeName = $this->getBlockTypeDefinitionName($class);
             $output .= 'type ' . $typeName . ' = {' . PHP_EOL;
-            foreach($meta[PropertyMacro::META_BLOCK_PROPERTIES] as $key => $def) {
-                $output .= $state->getTranspiler()->indent($key . ': ' . $this->getJavascriptTypeFromPropertyType($def['type'])) . PHP_EOL;
+            foreach($meta[PropertyMacro::META_PROPERTIES] as $key => $def) {
+                $output .= $state->getTranspiler()->indent($key . ': ' . ReactVariableTypes::getReactType($def['type'])) . PHP_EOL;
             }
             $output .= '}' . PHP_EOL;
         }
@@ -76,17 +77,17 @@ EOT;
         return $output;
     }
 
-    protected function getJavascriptTypeFromPropertyType(string $type): string
-    {
-        switch($type) {
-            case PropertyMacro::TYPE_INT:
-                return 'number';
-            case PropertyMacro::TYPE_STRING:
-                return 'string';
-            default:
-                throw new TranspileException('Unsupported property type: ' . $type);
-        }
-    }
+//    protected function getJavascriptTypeFromPropertyType(string $type): string
+//    {
+//        switch($type) {
+//            case PropertyMacro::TYPE_INT:
+//                return 'number';
+//            case PropertyMacro::TYPE_STRING:
+//                return 'string';
+//            default:
+//                throw new TranspileException('Unsupported property type: ' . $type);
+//        }
+//    }
 
     protected function getBlockTypeDefinitionName(string $class): string
     {

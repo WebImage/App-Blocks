@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates;
+namespace WebImage\BlockManager\Templates;
 
 class Context implements \ArrayAccess
 {

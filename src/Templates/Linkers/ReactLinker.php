@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Linkers;
+namespace WebImage\BlockManager\Templates\Linkers;
 
 class ReactLinker implements LinkerInterface
 {

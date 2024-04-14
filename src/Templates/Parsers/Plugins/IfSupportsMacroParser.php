@@ -1,14 +1,14 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Parsers\Plugins;
+namespace WebImage\BlockManager\Templates\Parsers\Plugins;
 
-use WebImage\BlockManager\src\Templates\Context;
-use WebImage\BlockManager\src\Templates\Meta;
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\src\Templates\Parsers\ParserException;
-use WebImage\BlockManager\src\Templates\Parsers\ParserState;
-use WebImage\BlockManager\src\Templates\Parsers\TemplateParser;
+use WebImage\BlockManager\Templates\Context;
+use WebImage\BlockManager\Templates\Meta;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\BlockManager\Templates\Parsers\ParserException;
+use WebImage\BlockManager\Templates\Parsers\ParserState;
+use WebImage\BlockManager\Templates\Parsers\TemplateParser;
 
 class IfSupportsMacroParser extends AbstractMacroParser
 {

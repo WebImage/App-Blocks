@@ -1,25 +1,24 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Plugins;
+namespace WebImage\BlockManager\Templates\Plugins;
 
-use WebImage\BlockManager\src\Templates\Parsers\Branch;
-use WebImage\BlockManager\src\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\src\Templates\Parsers\ParserException;
-use WebImage\BlockManager\src\Templates\Parsers\ParserState;
-use WebImage\BlockManager\src\Templates\Parsers\Plugins\AbstractMacroParser;
-use WebImage\BlockManager\src\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\src\Templates\Transpilers\Plugins\TranspilerPluginTrait;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerPluginInterface;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerState;
+use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\BlockManager\Templates\Parsers\ParserException;
+use WebImage\BlockManager\Templates\Parsers\ParserState;
+use WebImage\BlockManager\Templates\Parsers\Plugins\AbstractMacroParser;
+use WebImage\BlockManager\Templates\Parsers\TemplateParser;
+use WebImage\BlockManager\Templates\Parsers\VariableTypes;
+use WebImage\BlockManager\Templates\Transpilers\Plugins\TranspilerPluginTrait;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerPluginInterface;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
 
 class PropertyMacro extends AbstractMacroParser implements TranspilerPluginInterface
 {
     use TranspilerPluginTrait;
     const MACRO_PROPERTY = 'property';
-    const META_BLOCK_PROPERTIES = 'block.properties';
-    const TYPE_INT = 'int';
-    const TYPE_STRING = 'string';
-    const TYPE_FLOAT = 'float';
+//    const META_BLOCK_PROPERTIES = 'block.properties';
+    const META_PROPERTIES = 'properties';
 
     protected array $supportedMacros = [self::MACRO_PROPERTY];
 
@@ -38,18 +37,18 @@ class PropertyMacro extends AbstractMacroParser implements TranspilerPluginInter
         $type = self::getArgumentStringByName($this->getMacroName(), $args, 'type');
         $default = self::getArgumentValueByName($this->getMacroName(), $args, 'default');
 
-        $metaProperties = $state->meta[self::META_BLOCK_PROPERTIES] ?? [];
+        $metaProperties = $state->meta[self::META_PROPERTIES] ?? [];
 
         if (isset($metaProperties[$name])) {
             throw new ParserException('Only one property can be defined for ' . $name);
         }
 
         $metaProperties[$name] = [
-            'type' => $type,
+            'type' => VariableTypes::validType($type),
             'default' => $default
         ];
 
-        $state->meta[self::META_BLOCK_PROPERTIES] = $metaProperties;
+        $state->meta[self::META_PROPERTIES] = $metaProperties;
     }
 
     private function getValidTypes(): array

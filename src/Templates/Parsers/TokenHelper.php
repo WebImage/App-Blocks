@@ -1,9 +1,9 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Parsers;
+namespace WebImage\BlockManager\Templates\Parsers;
 
-use WebImage\BlockManager\src\Templates\Lexers\TemplateLexer;
-use WebImage\BlockManager\src\Templates\Lexers\Token;
+use WebImage\BlockManager\Templates\Lexers\TemplateLexer;
+use WebImage\BlockManager\Templates\Lexers\Token;
 
 class TokenHelper
 {

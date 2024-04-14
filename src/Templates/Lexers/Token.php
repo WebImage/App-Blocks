@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WebImage\BlockManager\src\Templates\Lexers;
+namespace WebImage\BlockManager\Templates\Lexers;
 
 use function in_array;
 

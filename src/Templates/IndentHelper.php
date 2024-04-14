@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates;
+namespace WebImage\BlockManager\Templates;
 
 class IndentHelper {
     public static function indent(string $text, string $indentChars, int $depth=0): string {

@@ -1,14 +1,14 @@
 <?php
 
-namespace WebImage\BlockManager\src\Templates\Parsers\Plugins;
+namespace WebImage\BlockManager\Templates\Parsers\Plugins;
 
-use WebImage\BlockManager\src\Templates\Meta;
-use WebImage\BlockManager\src\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\src\Templates\Parsers\ParserException;
-use WebImage\BlockManager\src\Templates\Parsers\ParserState;
-use WebImage\BlockManager\src\Templates\Plugins\PropertyMacro;
-use WebImage\BlockManager\src\Templates\Transpilers\Plugins\TranspilerPluginTrait;
-use WebImage\BlockManager\src\Templates\Transpilers\TranspilerPluginInterface;
+use WebImage\BlockManager\Templates\Meta;
+use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\BlockManager\Templates\Parsers\ParserException;
+use WebImage\BlockManager\Templates\Parsers\ParserState;
+use WebImage\BlockManager\Templates\Plugins\PropertyMacro;
+use WebImage\BlockManager\Templates\Transpilers\Plugins\TranspilerPluginTrait;
+use WebImage\BlockManager\Templates\Transpilers\TranspilerPluginInterface;
 
 class ControlMacroParser extends AbstractMacroParser implements TranspilerPluginInterface
 {
@@ -39,7 +39,7 @@ class ControlMacroParser extends AbstractMacroParser implements TranspilerPlugin
 
     private function assertPropertyExists(Meta $meta, string $varName)
     {
-        if (!isset($meta[PropertyMacro::META_BLOCK_PROPERTIES]) || !isset($meta[PropertyMacro::META_BLOCK_PROPERTIES][$varName])) {
+        if (!isset($meta[PropertyMacro::META_PROPERTIES]) || !isset($meta[PropertyMacro::META_PROPERTIES][$varName])) {
             throw new ParserException('@property(\''. $varName . '\', ...) must be called before @control(\'' . $varName . '\', ...) in order to set up the property');
         }
     }
