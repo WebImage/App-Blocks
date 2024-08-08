@@ -20,7 +20,10 @@ class ControlMacroParser extends AbstractMacroParser implements TranspilerPlugin
     protected function assertContext(): void
     {
         parent::assertContext();
-        if (!isset($this->currentState->meta[ControlsMacroParser::META_CONTROL_GROUP])) throw new ParserException('@control must be preceeded by @controls($groupName)');
+        if (!isset($this->currentState->meta[ControlsMacroParser::META_CONTROL_GROUP])) {
+//			echo '<pre>';print_r($this->currentState->); die(__FILE__ . ':' . __LINE__ . PHP_EOL);
+			throw new ParserException('@control must be preceeded by @controls($groupName)');
+		}
     }
 
     protected function processArguments(ParserState $state, array $args)
@@ -39,9 +42,7 @@ class ControlMacroParser extends AbstractMacroParser implements TranspilerPlugin
 
     private function assertPropertyExists(Meta $meta, string $varName)
     {
-        if (!isset($meta[PropertyMacro::META_PROPERTIES]) || !isset($meta[PropertyMacro::META_PROPERTIES][$varName])) {
-            throw new ParserException('@property(\''. $varName . '\', ...) must be called before @control(\'' . $varName . '\', ...) in order to set up the property');
-        }
+        if (!isset($meta[PropertyMacro::META_PROPERTIES]) || !isset($meta[PropertyMacro::META_PROPERTIES][$varName])) throw new ParserException('@property(\''. $varName . '\', ...) must be called before @control(\'' . $varName . '\', ...) in order to set up the property');
     }
 
     public static function getArgumentDefinitions(string $macroName): array

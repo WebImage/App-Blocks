@@ -9,8 +9,8 @@ final class Branch
     private string  $type;
     private ?string $value;
     private array   $args;
+	private ImmutableMeta    $meta;
     private array   $children;
-    private ImmutableMeta    $meta;
 
     /**
      * @param string $type

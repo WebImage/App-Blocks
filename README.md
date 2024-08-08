@@ -1,3 +1,9 @@
+# Component Library
+- https://blog.logrocket.com/how-to-build-component-library-react-typescript/
+-  https://storybook.js.org/tutorials/intro-to-storybook/react/en/simple-component/
+
+
+
 # Build System
 
 **/block-packages** - Contains the block packages that are available to the block manager service.  Each package is a directory that contains a package.json file and a blocks directory.  The blocks directory contains the block templates that are available to the block manager service.
@@ -11,6 +17,59 @@
 **/services/blocks/type-service.ts** - register(BlockTypeDefinition)
 
 **/types/block-types** - The block type definitions that will define the properties that a block has.
+
+## Build Package
+
+## Block Builder
+
+- Types of block builders
+  - Templates
+  - Contents
+  - Forms
+
+### Template Builder
+
+Need to have a PlaceholderBlockDefintion that defines which builder configuration to use.
+
+The PlaceholderBlockDefinitions will have a "key" that defines how the child data will be stored.  
+
+For example, a template might have a "mainContent" and "sideBar" and "footerLinks."  The data structure would then get stored as:
+```json
+{
+  "template": "some-template-id",
+  "regions": {
+    "mainContent": {
+      type: "container",
+      children: []
+    },
+    "sideBar": {
+      type: "container",
+      children: []
+    },
+    "footerLinks": {
+      "type": "html",
+      "data": "<strong>A bold statement"
+    }
+  }
+}
+```
+```typescript jsx
+export {
+  TextBlockDefinition
+}
+
+const ContentBuilder = [
+  ContainerBlockDefinition,
+  TextBlockDefinition,
+  FormBlockDefinition
+]
+
+const TemplateBlockBuilder = [
+  ContainerBlockDefinition,
+  TextBlockDefinition,
+  PlaceholderBlockDefinition // Allows other block builders to be added 
+]
+```
 
 ## Build Process
 - Need
@@ -46,7 +105,8 @@
       }
       BlockConfig "1" --> "n" CSSProperties
       BlockTypeDefinition ..> BlockConfig
-```
+    ```
+
 How to manage conditional blocks?  Can probably be configurable based on structure / tree properties and value tree.
 
 # Templates

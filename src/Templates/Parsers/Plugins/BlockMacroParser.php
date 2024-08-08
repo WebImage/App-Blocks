@@ -27,7 +27,7 @@ class BlockMacroParser extends AbstractMacroParser
 		self::MACRO_REQUIRED_PARENT
 	];
 
-    protected function processArguments(ParserState $state, array $args)
+	protected function processArguments(ParserState $state, array $args)
     {
         $macroName = $this->getMacroName();
 
@@ -37,6 +37,7 @@ class BlockMacroParser extends AbstractMacroParser
                 $meta[self::META_BLOCK_NAME]  = static::getArgumentStringByName($macroName, $args, 'name');
                 $meta[self::META_BLOCK_CLASS] = static::getArgumentStringByName($macroName, $args, 'class');
                 $meta[self::META_BLOCK_LABEL] = static::getArgumentStringByName($macroName, $args, 'label');
+
                 break;
 			case self::MACRO_SUPPORTED_CHILD:
 				$meta = $this->currentState->meta;
@@ -48,7 +49,7 @@ class BlockMacroParser extends AbstractMacroParser
         }
     }
 
-    public static function getArgumentDefinitions(string $macroName): array
+	public static function getArgumentDefinitions(string $macroName): array
     {
 		switch ($macroName) {
 			case self::MACRO_BLOCK:
@@ -80,7 +81,7 @@ class BlockMacroParser extends AbstractMacroParser
         return parent::getBranchType($macroName);
     }
 
-    protected function processBody(ParserState $state, string $macroName): array
+	protected function processBody(ParserState $state, string $macroName): array
     {
         if ($macroName === self::MACRO_BLOCK) {
             $body = $state->parser->parseText([self::T_END_BLOCK_MACRO, null]);

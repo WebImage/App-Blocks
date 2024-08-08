@@ -30,7 +30,6 @@ class ReactControlTemplateGenerator implements ProcessorInterface
 //		echo 'Write to ' . $this->controlsPath . '<br/>' . PHP_EOL;
 		foreach ($blockFiles as $blockFile) {
 			$meta = $blockFile->getResult()->getMeta();
-			if (!isset($meta[BlockMacroParser::META_BLOCK_NAME])) continue;
 			echo 'React Block: ' . $meta[BlockMacroParser::META_BLOCK_NAME] . '<br/>' . PHP_EOL;
 //			/** @var ParseResult $parsed */
 //			$parsed = $blockFile->getResult();

@@ -14,17 +14,25 @@ class ControlsMacroParser extends AbstractMacroParser
 
     protected array $supportedMacros = ['controls'];
 
-    protected function startContext(): ?Meta
-    {
-        $args = $this->currentState->context[self::CONTEXT_MACRO_ARGS];
-        $name = self::getArgumentStringByName($this->getMacroName(), $args, 'name');
+//    protected function createContext(): array
+//    {
+//        $args = $this->currentState->context[self::CONTEXT_MACRO_ARGS];
+//        $name = self::getArgumentStringByName($this->getMacroName(), $args, 'name');
+//
+//		return [
+//			self::META_CONTROL_GROUP => $name
+//		];
+////        $this->currentState->meta[self::META_CONTROL_GROUP] = $name;
+////
+////        return null;
+//    }
+	protected function processArguments(ParserState $state, array $args)
+	{
+		$state->meta[self::META_CONTROL_GROUP] = self::getArgumentStringByName($this->getMacroName(), $args, 'groupName');
+	}
 
-        $this->currentState->meta[self::META_CONTROL_GROUP] = $name;
 
-        return null;
-    }
-
-    protected function createBranch(ParserState $state, string $type, string $name, array $children = [], array $args = [], array $meta = []): ?Branch
+	protected function createBranch(ParserState $state, string $type, string $name, array $children = [], array $args = [], array $meta = []): ?Branch
     {
         return null;
     }
@@ -32,7 +40,7 @@ class ControlsMacroParser extends AbstractMacroParser
     public static function getArgumentDefinitions(string $macroName): array
     {
         return [
-            new BranchArgumentDefinition('name', 'The machine-friendly name under which to group this control, e.g. "general")')
+            new BranchArgumentDefinition('groupName', 'The machine-friendly name under which to group this control, e.g. "general")')
         ];
     }
 }

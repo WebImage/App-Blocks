@@ -29,7 +29,6 @@ class AuthorMacro extends AbstractMacroParser implements TranspilerPluginInterfa
         $email     = self::getArgumentStringByName($macroName, $args, 'email');
         $name      = self::getArgumentStringByName($macroName, $args, 'name');
 
-
         if (!preg_match('/.+@.+\..+/', $email)) throw new ParserException($macroName . ' first parameter must be a valid email address');
 
         $meta[self::META_AUTHOR_EMAIL] = $email;
