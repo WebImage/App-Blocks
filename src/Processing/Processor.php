@@ -1,8 +1,8 @@
 <?php
 
-namespace WebImage\BlockManager\Processing;
+namespace WebImage\Blocks\Processing;
 
-use WebImage\BlockManager\Templates\Parsers\TemplateParser;
+use WebImage\Blocks\Templates\Parsers\TemplateParser;
 
 class Processor
 {

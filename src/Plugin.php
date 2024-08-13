@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager;
+namespace WebImage\Blocks;
 
 use WebImage\Application\AbstractPlugin;
 use WebImage\Application\ApplicationInterface;

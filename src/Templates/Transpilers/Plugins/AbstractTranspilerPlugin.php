@@ -1,8 +1,8 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers\Plugins;
+namespace WebImage\Blocks\Templates\Transpilers\Plugins;
 
-use WebImage\BlockManager\Templates\Transpilers\TranspilerPluginInterface;
+use WebImage\Blocks\Templates\Transpilers\TranspilerPluginInterface;
 
 abstract class AbstractTranspilerPlugin implements TranspilerPluginInterface
 {

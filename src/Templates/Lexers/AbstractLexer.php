@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace WebImage\BlockManager\Templates\Lexers;
+namespace WebImage\Blocks\Templates\Lexers;
 
 use ReflectionClass;
 use UnitEnum;

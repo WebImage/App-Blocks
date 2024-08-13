@@ -1,9 +1,9 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers\Plugins;
+namespace WebImage\Blocks\Templates\Transpilers\Plugins;
 
-use WebImage\BlockManager\Templates\Parsers\Branch;
-use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
+use WebImage\Blocks\Templates\Parsers\Branch;
+use WebImage\Blocks\Templates\Transpilers\TranspilerState;
 
 trait TranspilerPluginTrait
 {

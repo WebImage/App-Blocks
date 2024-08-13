@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\Processing;
+namespace WebImage\Blocks\Processing;
 
 interface ProcessorInterface
 {

@@ -1,12 +1,11 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers;
+namespace WebImage\Blocks\Templates\Parsers;
 
-use WebImage\BlockManager\Templates\Context;
-use WebImage\BlockManager\Templates\Lexers\TemplateLexer;
-use WebImage\BlockManager\Templates\Lexers\TemplateLexerDebugger;
-use WebImage\BlockManager\Templates\Meta;
-use WebImage\BlockManager\Templates\Parsers\ParseException;
+use WebImage\Blocks\Templates\Context;
+use WebImage\Blocks\Templates\Lexers\TemplateLexer;
+use WebImage\Blocks\Templates\Lexers\TemplateLexerDebugger;
+use WebImage\Blocks\Templates\Meta;
 
 class TemplateParser
 {
@@ -66,7 +65,7 @@ class TemplateParser
     }
 
     /**
-     * @return \WebImage\BlockManager\Templates\Parsers\ParserPluginInterface[]
+     * @return ParserPluginInterface[]
      */
     public function plugins(): array
     {
@@ -377,7 +376,7 @@ class TemplateParser
                     break;
                 case TemplateLexer::T_STRING:
                     if ($keyName === null) throw new ParserException('Cannot use variable as key for an object');
-                    else if ($prevToken != TemplateLexer::T_COLON) throw new ParseException('looking for ' . TemplateLexer::T_COLON . ', but found ' . $this->lexer->token->type);
+                    else if ($prevToken != TemplateLexer::T_COLON) throw new ParserException('looking for ' . TemplateLexer::T_COLON . ', but found ' . $this->lexer->token->type);
                     $variable = $this->parseVariable();
                     $children[] = new Branch(self::T_KEY_VALUE_PAIR, $keyName, [$variable], [], $keyMeta->toArray());
                     $keyName = null;

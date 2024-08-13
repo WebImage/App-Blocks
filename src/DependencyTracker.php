@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager;
+namespace WebImage\Blocks;
 
 class DependencyTracker
 {

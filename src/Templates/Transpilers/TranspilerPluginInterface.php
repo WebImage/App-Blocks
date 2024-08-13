@@ -1,8 +1,8 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers;
+namespace WebImage\Blocks\Templates\Transpilers;
 
-use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\Blocks\Templates\Parsers\Branch;
 
 interface TranspilerPluginInterface
 {

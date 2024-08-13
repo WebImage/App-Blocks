@@ -1,9 +1,9 @@
 <?php
 
-namespace WebImage\BlockManager;
+namespace WebImage\Blocks;
 
-use WebImage\BlockManager\Templates\Parsers\ParseResult;
-use WebImage\BlockManager\Templates\Transpilers\Transpiler;
+use WebImage\Blocks\Templates\Parsers\ParseResult;
+use WebImage\Blocks\Templates\Transpilers\Transpiler;
 
 class TranspileStream
 {

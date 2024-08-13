@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Plugins;
+namespace WebImage\Blocks\Templates\Plugins;
 
-use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\Templates\Parsers\ParserState;
-use WebImage\BlockManager\Templates\Parsers\Plugins\AbstractMacroParser;
+use WebImage\Blocks\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\Blocks\Templates\Parsers\ParserState;
+use WebImage\Blocks\Templates\Parsers\Plugins\AbstractMacroParser;
 
 class ControlDefinitionMacro extends AbstractMacroParser
 {

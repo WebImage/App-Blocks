@@ -1,8 +1,8 @@
 <?php
 
-namespace WebImage\BlockManager\Processing;
+namespace WebImage\Blocks\Processing;
 
-use WebImage\BlockManager\Templates\Parsers\ParseResult;
+use WebImage\Blocks\Templates\Parsers\ParseResult;
 
 class BlockFile {
 	private string $originalFile;

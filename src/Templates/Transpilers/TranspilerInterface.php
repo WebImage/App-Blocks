@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers;
+namespace WebImage\Blocks\Templates\Transpilers;
 
-use WebImage\BlockManager\Templates\Context;
-use WebImage\BlockManager\Templates\Meta;
-use WebImage\BlockManager\Templates\Parsers\Branch;
+use WebImage\Blocks\Templates\Context;
+use WebImage\Blocks\Templates\Meta;
+use WebImage\Blocks\Templates\Parsers\Branch;
 
 interface TranspilerInterface
 {

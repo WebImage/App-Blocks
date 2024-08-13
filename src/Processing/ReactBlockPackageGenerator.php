@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\Processing;
+namespace WebImage\Blocks\Processing;
 
-use WebImage\BlockManager\Templates\Parsers\Plugins\BlockMacroParser;
-use WebImage\BlockManager\Templates\Plugins\PropertyMacro;
-use WebImage\BlockManager\Templates\Transpilers\ReactTemplateTranspiler;
+use WebImage\Blocks\Templates\Parsers\Plugins\BlockMacroParser;
+use WebImage\Blocks\Templates\Plugins\PropertyMacro;
+use WebImage\Blocks\Templates\Transpilers\ReactTemplateTranspiler;
 
 class ReactBlockPackageGenerator implements ProcessorInterface
 {

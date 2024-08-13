@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers;
+namespace WebImage\Blocks\Templates\Parsers;
 
 interface ParserPluginInterface
 {
@@ -9,7 +9,7 @@ interface ParserPluginInterface
     /**
      * @param ParserState $state
 * //     * @param ParserPluginInterface|null $plugin Can be specified if plugin should capture
-     * @return \WebImage\BlockManager\Templates\Parsers\Branch|null
+     * @return \WebImage\Blocks\Templates\Parsers\Branch|null
      */
     public function parseText(ParserState $state, array $untilBranchTypes=null): ?Branch;
 

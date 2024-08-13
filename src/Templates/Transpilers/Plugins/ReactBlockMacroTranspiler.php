@@ -1,14 +1,14 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers\Plugins;
+namespace WebImage\Blocks\Templates\Transpilers\Plugins;
 
-use WebImage\BlockManager\Processing\ReactVariableTypes;
-use WebImage\BlockManager\Templates\Parsers\Branch;
-use WebImage\BlockManager\Templates\Parsers\Plugins\WrapMacroParser;
-use WebImage\BlockManager\Templates\Plugins\DraggableMacro;
-use WebImage\BlockManager\Templates\Plugins\PropertyMacro;
-use WebImage\BlockManager\Templates\Transpilers\TranspileException;
-use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
+use WebImage\Blocks\Processing\ReactVariableTypes;
+use WebImage\Blocks\Templates\Parsers\Branch;
+use WebImage\Blocks\Templates\Parsers\Plugins\WrapMacroParser;
+use WebImage\Blocks\Templates\Plugins\DraggableMacro;
+use WebImage\Blocks\Templates\Plugins\PropertyMacro;
+use WebImage\Blocks\Templates\Transpilers\TranspileException;
+use WebImage\Blocks\Templates\Transpilers\TranspilerState;
 
 class ReactBlockMacroTranspiler extends BlockMacroTranspiler
 {

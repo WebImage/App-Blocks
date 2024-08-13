@@ -1,8 +1,8 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers;
+namespace WebImage\Blocks\Templates\Parsers;
 
-use WebImage\BlockManager\Processing\UnsupportedVariableTypeException;
+use WebImage\Blocks\Processing\UnsupportedVariableTypeException;
 
 class VariableTypes
 {

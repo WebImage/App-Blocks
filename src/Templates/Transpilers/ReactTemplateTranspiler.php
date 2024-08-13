@@ -1,23 +1,23 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers;
+namespace WebImage\Blocks\Templates\Transpilers;
 
-use WebImage\BlockManager\Templates\Parsers\Plugins\WrapMacroParser;
-use WebImage\BlockManager\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\Templates\Plugins\AuthorMacro;
-use WebImage\BlockManager\Templates\Plugins\ControlOptionMacro;
-use WebImage\BlockManager\Templates\Plugins\DraggableMacro;
-use WebImage\BlockManager\Templates\Plugins\ExtendBlockMacro;
-use WebImage\BlockManager\Templates\Plugins\JavascriptVariable;
-use WebImage\BlockManager\Templates\Plugins\PropertyMacro;
-use WebImage\BlockManager\Templates\Plugins\ReactCode;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\ControlMacroTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\IfSupportsMacroGroupTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\MacroGroupTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\ReactBlockMacroTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\ReactControlDefinitionTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\ReactEachMacroTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\ReactHtmlTranspiler;
+use WebImage\Blocks\Templates\Parsers\Plugins\WrapMacroParser;
+use WebImage\Blocks\Templates\Parsers\TemplateParser;
+use WebImage\Blocks\Templates\Plugins\AuthorMacro;
+use WebImage\Blocks\Templates\Plugins\ControlOptionMacro;
+use WebImage\Blocks\Templates\Plugins\DraggableMacro;
+use WebImage\Blocks\Templates\Plugins\ExtendBlockMacro;
+use WebImage\Blocks\Templates\Plugins\JavascriptVariable;
+use WebImage\Blocks\Templates\Plugins\PropertyMacro;
+use WebImage\Blocks\Templates\Plugins\ReactCode;
+use WebImage\Blocks\Templates\Transpilers\Plugins\ControlMacroTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\IfSupportsMacroGroupTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\MacroGroupTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\ReactBlockMacroTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\ReactControlDefinitionTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\ReactEachMacroTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\ReactHtmlTranspiler;
 
 class ReactTemplateTranspiler extends Transpiler
 {

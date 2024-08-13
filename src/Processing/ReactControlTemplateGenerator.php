@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\Processing;
+namespace WebImage\Blocks\Processing;
 
-use WebImage\BlockManager\Templates\Parsers\ParseResult;
-use WebImage\BlockManager\Templates\Parsers\Plugins\BlockMacroParser;
-use WebImage\BlockManager\Templates\Transpilers\ReactTemplateTranspiler;
+use WebImage\Blocks\Templates\Parsers\ParseResult;
+use WebImage\Blocks\Templates\Parsers\Plugins\BlockMacroParser;
+use WebImage\Blocks\Templates\Transpilers\ReactTemplateTranspiler;
 
 class ReactControlTemplateGenerator implements ProcessorInterface
 {

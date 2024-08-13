@@ -1,8 +1,8 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers;
+namespace WebImage\Blocks\Templates\Parsers;
 
-use WebImage\BlockManager\Templates\Meta;
+use WebImage\Blocks\Templates\Meta;
 
 class RequirementHelper
 {

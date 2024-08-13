@@ -1,14 +1,14 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Plugins;
+namespace WebImage\Blocks\Templates\Plugins;
 
-use WebImage\BlockManager\Templates\Parsers\Branch;
-use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\Templates\Parsers\Plugins\AbstractMacroParser;
-use WebImage\BlockManager\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\TranspilerPluginTrait;
-use WebImage\BlockManager\Templates\Transpilers\TranspilerPluginInterface;
-use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
+use WebImage\Blocks\Templates\Parsers\Branch;
+use WebImage\Blocks\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\Blocks\Templates\Parsers\Plugins\AbstractMacroParser;
+use WebImage\Blocks\Templates\Parsers\TemplateParser;
+use WebImage\Blocks\Templates\Transpilers\Plugins\TranspilerPluginTrait;
+use WebImage\Blocks\Templates\Transpilers\TranspilerPluginInterface;
+use WebImage\Blocks\Templates\Transpilers\TranspilerState;
 
 class ControlOptionMacro extends AbstractMacroParser implements TranspilerPluginInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers\Plugins;
+namespace WebImage\Blocks\Templates\Parsers\Plugins;
 
-use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\Templates\Parsers\ParserState;
+use WebImage\Blocks\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\Blocks\Templates\Parsers\ParserState;
 
 class BlockMacroParser extends AbstractMacroParser
 {

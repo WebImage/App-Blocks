@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\Templates;
+namespace WebImage\Blocks\Templates;
 
 class ImmutableMeta extends Meta
 {

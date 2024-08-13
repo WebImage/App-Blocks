@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers\Plugins;
+namespace WebImage\Blocks\Templates\Transpilers\Plugins;
 
 class PhpHtmlTranspiler extends HtmlTranspiler
 {

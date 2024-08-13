@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Lexers;
+namespace WebImage\Blocks\Templates\Lexers;
 
 //use Doctrine\Common\Lexer\AbstractLexer;
 
@@ -21,7 +21,7 @@ class TemplateLexer extends AbstractLexer
     const T_NUMBER_SIGN = 'T_NUMBER_SIGN';
     const T_DOLLAR_SIGN = 'T_DOLLAR_SIGN';
     const T_PERCENT_SIGN = 'T_PERCENT_SIGN';
-    const T_CAROT = 'T_CAROT';
+    const T_CARET = 'T_CARET';
     const T_AMPERSAND = 'T_AMPERSAND';
     const T_ASTERISK = 'T_ASTERISK';
     const T_PERIOD = 'T_PERIOD';
@@ -65,7 +65,7 @@ class TemplateLexer extends AbstractLexer
         else if ($value == '#') return self::T_NUMBER_SIGN;
         else if ($value == '$') return self::T_DOLLAR_SIGN;
         else if ($value == '%') return self::T_PERCENT_SIGN;
-        else if ($value == '^') return self::T_CAROT;
+        else if ($value == '^') return self::T_CARET;
         else if ($value == '&') return self::T_AMPERSAND;
         else if ($value == '*') return self::T_ASTERISK;
         else if ($value == '.') return self::T_PERIOD;

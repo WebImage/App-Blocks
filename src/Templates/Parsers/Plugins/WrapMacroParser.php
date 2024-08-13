@@ -1,15 +1,15 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers\Plugins;
+namespace WebImage\Blocks\Templates\Parsers\Plugins;
 
-use WebImage\BlockManager\Templates\NotYetSupportedTranspiler;
-use WebImage\BlockManager\Templates\Parsers\Branch;
-use WebImage\BlockManager\Templates\Parsers\BranchArgumentDefinition;
-use WebImage\BlockManager\Templates\Parsers\ParserState;
-use WebImage\BlockManager\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\TranspilerPluginTrait;
-use WebImage\BlockManager\Templates\Transpilers\TranspilerPluginInterface;
-use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
+use WebImage\Blocks\Templates\NotYetSupportedTranspiler;
+use WebImage\Blocks\Templates\Parsers\Branch;
+use WebImage\Blocks\Templates\Parsers\BranchArgumentDefinition;
+use WebImage\Blocks\Templates\Parsers\ParserState;
+use WebImage\Blocks\Templates\Parsers\TemplateParser;
+use WebImage\Blocks\Templates\Transpilers\Plugins\TranspilerPluginTrait;
+use WebImage\Blocks\Templates\Transpilers\TranspilerPluginInterface;
+use WebImage\Blocks\Templates\Transpilers\TranspilerState;
 
 class WrapMacroParser extends AbstractMacroParser implements TranspilerPluginInterface
 {

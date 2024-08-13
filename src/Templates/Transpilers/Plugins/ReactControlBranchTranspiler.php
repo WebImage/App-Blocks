@@ -1,9 +1,9 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers\Plugins;
+namespace WebImage\Blocks\Templates\Transpilers\Plugins;
 
-use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
-use WebImage\BlockManager\Templates\Transpilers\BranchTranspilerInterface;
+use WebImage\Blocks\Templates\Transpilers\TranspilerState;
+use WebImage\Blocks\Templates\Transpilers\BranchTranspilerInterface;
 
 class ReactControlBranchTranspiler implements BranchTranspilerInterface
 {

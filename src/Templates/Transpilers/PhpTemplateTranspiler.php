@@ -1,22 +1,22 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Transpilers;
+namespace WebImage\Blocks\Templates\Transpilers;
 
-use WebImage\BlockManager\Templates\Parsers\Plugins\WrapMacroParser;
-use WebImage\BlockManager\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\Templates\Plugins\AuthorMacro;
-use WebImage\BlockManager\Templates\Plugins\ControlOptionMacro;
-use WebImage\BlockManager\Templates\Plugins\DraggableMacro;
-use WebImage\BlockManager\Templates\Plugins\ExtendBlockMacro;
-use WebImage\BlockManager\Templates\Plugins\PhpCode;
-use WebImage\BlockManager\Templates\Plugins\PhpVariable;
-use WebImage\BlockManager\Templates\Plugins\PropertyMacro;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\ControlMacroTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\IfSupportsMacroGroupTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\MacroGroupTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\PhpBlockMacroTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\PhpEachMacroTranspiler;
-use WebImage\BlockManager\Templates\Transpilers\Plugins\PhpHtmlTranspiler;
+use WebImage\Blocks\Templates\Parsers\Plugins\WrapMacroParser;
+use WebImage\Blocks\Templates\Parsers\TemplateParser;
+use WebImage\Blocks\Templates\Plugins\AuthorMacro;
+use WebImage\Blocks\Templates\Plugins\ControlOptionMacro;
+use WebImage\Blocks\Templates\Plugins\DraggableMacro;
+use WebImage\Blocks\Templates\Plugins\ExtendBlockMacro;
+use WebImage\Blocks\Templates\Plugins\PhpCode;
+use WebImage\Blocks\Templates\Plugins\PhpVariable;
+use WebImage\Blocks\Templates\Plugins\PropertyMacro;
+use WebImage\Blocks\Templates\Transpilers\Plugins\ControlMacroTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\IfSupportsMacroGroupTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\MacroGroupTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\PhpBlockMacroTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\PhpEachMacroTranspiler;
+use WebImage\Blocks\Templates\Transpilers\Plugins\PhpHtmlTranspiler;
 
 class PhpTemplateTranspiler extends Transpiler
 {

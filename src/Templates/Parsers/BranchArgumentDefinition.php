@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers;
+namespace WebImage\Blocks\Templates\Parsers;
 
 class BranchArgumentDefinition
 {

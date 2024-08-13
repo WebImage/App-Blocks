@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\Processing;
+namespace WebImage\Blocks\Processing;
 
-use WebImage\BlockManager\Templates\IndentHelper;
-use WebImage\BlockManager\Templates\Parsers\Plugins\BlockMacroParser;
-use WebImage\BlockManager\Templates\Plugins\PropertyMacro;
+use WebImage\Blocks\Templates\IndentHelper;
+use WebImage\Blocks\Templates\Parsers\Plugins\BlockMacroParser;
+use WebImage\Blocks\Templates\Plugins\PropertyMacro;
 
 class ReactBlockTypeGenerator implements ProcessorInterface
 {

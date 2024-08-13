@@ -1,6 +1,6 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Lexers;
+namespace WebImage\Blocks\Templates\Lexers;
 
 class TemplateLexerDebugger
 {

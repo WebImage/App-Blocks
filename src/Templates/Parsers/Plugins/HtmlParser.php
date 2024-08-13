@@ -1,13 +1,13 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers\Plugins;
+namespace WebImage\Blocks\Templates\Parsers\Plugins;
 
-use WebImage\BlockManager\Templates\Lexers\TemplateLexer;
-use WebImage\BlockManager\Templates\Parsers\Branch;
-use WebImage\BlockManager\Templates\Parsers\ParserDebugger;
-use WebImage\BlockManager\Templates\Parsers\ParserException;
-use WebImage\BlockManager\Templates\Parsers\ParserPluginInterface;
-use WebImage\BlockManager\Templates\Parsers\ParserState;
+use WebImage\Blocks\Templates\Lexers\TemplateLexer;
+use WebImage\Blocks\Templates\Parsers\Branch;
+use WebImage\Blocks\Templates\Parsers\ParserDebugger;
+use WebImage\Blocks\Templates\Parsers\ParserException;
+use WebImage\Blocks\Templates\Parsers\ParserPluginInterface;
+use WebImage\Blocks\Templates\Parsers\ParserState;
 
 class HtmlParser implements ParserPluginInterface
 {

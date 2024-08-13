@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\Templates;
+namespace WebImage\Blocks\Templates;
 
-use WebImage\BlockManager\Templates\Parsers\Branch;
-use WebImage\BlockManager\Templates\Parsers\TemplateParser;
-use WebImage\BlockManager\Templates\Transpilers\TranspilerState;
+use WebImage\Blocks\Templates\Parsers\Branch;
+use WebImage\Blocks\Templates\Parsers\TemplateParser;
+use WebImage\Blocks\Templates\Transpilers\TranspilerState;
 
 trait NotYetSupportedTranspiler
 {

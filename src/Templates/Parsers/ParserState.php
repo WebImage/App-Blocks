@@ -1,10 +1,10 @@
 <?php
 
-namespace WebImage\BlockManager\Templates\Parsers;
+namespace WebImage\Blocks\Templates\Parsers;
 
-use WebImage\BlockManager\Templates\Context;
-use WebImage\BlockManager\Templates\Lexers\TemplateLexer;
-use WebImage\BlockManager\Templates\Meta;
+use WebImage\Blocks\Templates\Context;
+use WebImage\Blocks\Templates\Lexers\TemplateLexer;
+use WebImage\Blocks\Templates\Meta;
 
 class ParserState
 {
@@ -17,7 +17,7 @@ class ParserState
     public Context        $context;
 
     /**
-     * @param \WebImage\BlockManager\Templates\Parsers\TemplateParser $parser
+     * @param \WebImage\Blocks\Templates\Parsers\TemplateParser $parser
      * @param TemplateLexer $lexer
      * @param Meta $meta
      * @param Context $context
