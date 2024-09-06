@@ -1,0 +1,9 @@
+{
+  "id": "webimage/blocks",
+  "version": "0.0.1",
+  "name": "Block Builder",
+  "author": {
+    "name": "Robert Jones II",
+    "email": "rjones@corporatewebimage.com"
+  }
+}
