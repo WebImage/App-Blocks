@@ -7,4 +7,7 @@ use WebImage\Application\ApplicationInterface;
 
 class Plugin extends AbstractPlugin
 {
+	protected function load(ApplicationInterface $app): void
+	{
+	}
 }
