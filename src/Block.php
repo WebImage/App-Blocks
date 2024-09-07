@@ -3,6 +3,7 @@
 namespace WebImage\Blocks;
 
 use WebImage\Blocks\Services\BlockManager;
+use WebImage\Config\ImmutableConfig;
 use WebImage\Core\ArrayHelper;
 use WebImage\Core\ImmutableDictionary;
 
@@ -94,19 +95,19 @@ class Block
 	}
 
 	/**
-	 * @return ImmutableDictionary
+	 * @return ImmutableConfig
 	 */
-	public function getConfig(): ImmutableDictionary
+	public function getConfig(): ImmutableConfig
 	{
-		return new ImmutableDictionary($this->config);
+		return new ImmutableConfig($this->config);
 	}
 
 	/**
-	 * @return ImmutableDictionary
+	 * @return ImmutableConfig
 	 */
-	public function getData(): ImmutableDictionary
+	public function getData(): ImmutableConfig
 	{
-		return new ImmutableDictionary($this->data);
+		return new ImmutableConfig($this->data);
 	}
 
 	/**
@@ -145,6 +146,11 @@ class Block
 			}
 
 			$found = $child->findById($id);
+			if ($found !== null) {
+				return $found;
+			}
 		}
+
+		return null;
 	}
 }
